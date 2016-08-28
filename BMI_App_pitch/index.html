@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Body Mass Index Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Body Mass Index Calculator">
+  <meta name="author" content="Jesús Pacheco">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Body Mass Index Calculator</h1>
+    <h2>Calculate your BMI!</h2>
+    <p>Jesús Pacheco<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>So what&#39;s the Body Mass Index?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The Body Mass Index (BMI) is a way to quantify the amount of tissue mass in your body, and it let&#39;s you know if you can be considered to be anywhere from underweight to obese.  </p></li>
+<li><p>Usually you&#39;d want to be around the <strong>normal</strong> range, which goes from 18.5kg/m2 to 25kg/m2, although you could be outside this range and still be considered healthy.</p>
+
+<ul>
+<li>There&#39;s no such thing as a one-measure-fits-all!</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>OK, now I&#39;m all thrilled about knowing my BMI! How do I calculate it?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The calculation of the BMI is as <span title="It is kg/m2" style="color:red">complicated</span> as it can get, but <em>fear not</em>, because there&#39;s <a href="https://jesupb.shinyapps.io/BMI_Calculator/">this</a> awesome app that&#39;ll do the calculation for you!</p></li>
+<li><p>You can try it right here!</p></li>
+</ul>
+
+<iframe src="https://jesupb.shinyapps.io/BMI_Calculator/" style="border-style:dashed;padding:1em"></iframe> 
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How do I use the calculator?</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style="float:left;margin-right: 50px;"><img src="fig/input_panel.jpg"></div>
+
+<div>
+<h3 style="color:#009933">Using the app is really easy!</h3>
+<ul>
+    <li>Find out your weight in <var>kg</var> or <var>lbs</var>.</li>
+    <li>Find out your height in meters or inches.</li>
+    <li>Tell the app if you took your measures in the metric system or the USA standard system.</li>
+    <li>Tell the app your measures.</li>
+    <li>Get your results immediatly!</li>
+</ul>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>What&#39;s going on in the calculator?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If you are the nerdy kind of person, and really <em>really</em> want to know what&#39;s going on inside the calculator, I&#39;ll leave this code chunk here for you to check:</p>
+
+<pre><code class="r">my_height &lt;- 1.75 # in meters
+my_weight &lt;- 75  # in kg
+my_bmi &lt;- my_weight/my_height^2
+my_bmi
+</code></pre>
+
+<pre><code>## [1] 24.4898
+</code></pre>
+
+<p>As I said before, as complicated as it gets.</p>
+
+<p>Thanks for checking out my project :)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='So what&#39;s the Body Mass Index?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='OK, now I&#39;m all thrilled about knowing my BMI! How do I calculate it?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How do I use the calculator?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What&#39;s going on in the calculator?'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
